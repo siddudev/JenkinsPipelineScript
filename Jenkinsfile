@@ -8,7 +8,7 @@ pipeline{
 		}
 		stage("Program Execution"){
                         steps{
-                                java Sample.java
+                                bat 'java Sample.java'
                         }
                 }
 	}
