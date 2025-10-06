@@ -1,14 +1,14 @@
 pipeline{
 	agent any
 	stages{
-		stage("Stage1"){
+		stage("cloning"){
 			steps{
-				echo "This is stage 1"
+				echo "Cloning repo is completed"
 			}
 		}
-		stage("Stage2"){
+		stage("Program Execution"){
                         steps{
-                                echo "This is stage 2"
+                                java Sample.java
                         }
                 }
 	}
