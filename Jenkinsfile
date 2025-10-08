@@ -3,12 +3,12 @@ pipeline{
 	stages{
 		stage("cloning"){
 			steps{
-				echo "Cloning repo is completed"
+				echo "Cloning repo is completed" 
 			}
 		}
 		stage("Program Execution"){
                         steps{
-                                bat 'java Sample.java'
+                                sh 'java Sample.java'
                         }
                 }
 	}
